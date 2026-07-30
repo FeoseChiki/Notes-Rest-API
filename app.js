@@ -21,6 +21,10 @@ app.use(userRouter);
 // Error Handler (last)
 app.use(errorHandler);
 
+app.get('/', (req, res) => {
+    res.send ("Notea API is running successfully");
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
