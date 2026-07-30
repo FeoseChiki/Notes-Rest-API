@@ -13,7 +13,7 @@ const {
 const router = express.Router();
 
 // Note routes
-router.post("/note", requireAuth, postNote);
+router.post("/create-note", requireAuth, postNote);
 router.get("/note/search", requireAuth, getSearchNote);
 router.get("/note", requireAuth, getAllNote);
 router.get("/note/:id",requireAuth, getNoteById);
